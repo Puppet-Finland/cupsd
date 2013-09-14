@@ -21,5 +21,9 @@
 # See file LICENSE for details
 #
 class cupsd {
+
+# Rationale for this is explained in init.pp of the sshd module
+if hiera('manage_cupsd', 'true') != 'false' {
     include cupsd::install
+}
 }
