@@ -9,7 +9,7 @@
 #
 # == Examples
 #
-# include cupsd
+#   include cupsd
 #
 # == Authors
 #
@@ -17,8 +17,7 @@
 #
 # == License
 #
-# BSD-license
-# See file LICENSE for details
+# BSD-license. See file LICENSE for details.
 #
 class cupsd {
 
