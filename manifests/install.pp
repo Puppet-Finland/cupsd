@@ -3,10 +3,10 @@
 #
 # Install cupsd
 #
-class cupsd::install {
+class cupsd::install inherits cupsd::params {
 
     package { 'cups':
-        name => 'cups',
+        name => $::cupsd::params::package_name,
         ensure => installed,
     }
 }

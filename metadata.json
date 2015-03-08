@@ -1,0 +1,12 @@
+{
+  "name": "puppetfinland-cupsd",
+  "version": "0.2.0",
+  "author": "Puppet-Finland team",
+  "license": "BSD license",
+  "summary": "Setup cupsd",
+  "source": "https://github.com/Puppet-Finland/cupsd.git",
+  "project_page": "https://github.com/Puppet-Finland/cupsd",
+  "dependencies": [
+    { "name": "puppetfinland/os", "version_requirement": ">= 0.5.4" }
+  ]
+}
