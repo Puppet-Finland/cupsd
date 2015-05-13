@@ -6,7 +6,7 @@
 class cupsd::install inherits cupsd::params {
 
     package { 'cups':
-        name => $::cupsd::params::package_name,
         ensure => installed,
+        name   => $::cupsd::params::package_name,
     }
 }

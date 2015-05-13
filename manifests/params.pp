@@ -5,7 +5,7 @@
 #
 class cupsd::params {
 
-    include os::params
+    include ::os::params
 
     case $::osfamily {
         'Debian': {

@@ -5,8 +5,8 @@
 class cupsd::service inherits cupsd::params {
 
     service { 'cupsd':
-        name => "${::cupsd::params::service_name}",
-        enable => true,
+        name    => $::cupsd::params::service_name,
+        enable  => true,
         require => Class['cupsd::install'],
     }
 }

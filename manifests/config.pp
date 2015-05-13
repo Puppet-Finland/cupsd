@@ -14,13 +14,13 @@ class cupsd::config
 {
 
     file { 'cupsd-cupsd.conf':
-        name => $::cupsd::params::cupsd_conf,
-        ensure => present,
+        ensure  => present,
+        name    => $::cupsd::params::cupsd_conf,
         content => template('cupsd/cupsd.conf.erb'),
-        owner => root,
-        group => $::os::params::admingroup,
-        mode => 644,
+        owner   => $::os::params::adminuser,
+        group   => $::os::params::admingroup,
+        mode    => '0644',
         require => Class['cupsd::install'],
-        notify => Class['cupsd::service'],
+        notify  => Class['cupsd::service'],
     }
 }

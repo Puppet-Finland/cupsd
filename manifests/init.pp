@@ -45,15 +45,15 @@ class cupsd
 
 if $manage == 'yes' {
 
-    include cupsd::install
+    include ::cupsd::install
 
-    class { 'cupsd::config':
-        listen => $listen,
+    class { '::cupsd::config':
+        listen       => $listen,
         server_allow => $server_allow,
-        admin_allow => $admin_allow,
+        admin_allow  => $admin_allow,
         config_allow => $config_allow,
     }
 
-    include cupsd::service
+    include ::cupsd::service
 }
 }
