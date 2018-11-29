@@ -5,10 +5,10 @@
 #
 class cupsd::config
 (
-    $listen,
-    $server_allow,
-    $admin_allow,
-    $config_allow
+    String $listen,
+    String $server_allow,
+    String $admin_allow,
+    String $config_allow
 
 ) inherits cupsd::params
 {
